@@ -2,30 +2,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Performance Evaluation of TCP Reno and Google BBR in a Hybrid Mesh Network Topology</title>
+    <title>Performance Evaluation of TCP Reno and Google BBR</title>
     <style>
-        h1, h2, h3 {
-            display: block;
-            margin: 0.5em 0;
+        body {
+            font-family: serif; /* Matches the academic look */
+            line-height: 1.2;
+            margin: 40px;
+        }
+        /* Grouping headings to maintain consistent style but different sizes */
+        h1, h2, h3, h4 {
+            margin: 0.2em 0;
             font-weight: bold;
         }
-        h1 { font-size: 2em; }
-        h2 { font-size: 1.5em; }
-        h3 { font-size: 1.25em; }
+        h1 { font-size: 1.8em; } /* Main Course Title */
+        h2 { font-size: 1.4em; } /* Semester and Group */
+        h3 { font-size: 1.1em; } /* Members and Abstract labels */
+        h4 { font-size: 1em; }   /* Research Title */
+        
+        .abstract-text {
+            text-align: justify;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        .member-list {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
+
     <h1>ENSC 427: Communication Networks</h1>
-    <h1>Spring 2026</h1>
-    <h1>Group 4</h1>
-    <h1>Performance Evaluation of TCP Reno and Google BBR in a Hybrid Mesh Network Topolog</h1>
+    <h2>Spring 2026</h2>
+    <h2>Group 4</h2>
+
     <h3>Members</h3>
+    <div class="member-list">
         <p>Yousif Shehada ysa249@sfu.ca 301568740</p>
         <p>Evan Huang eha65@sfu.ca 301460793</p>
+    </div>
+
+    <h4>Performance Evaluation of TCP Reno and Google BBR in a Hybrid Mesh Network Topology</h4>
     
+    <br>
     <h3>Abstract</h3>
-        <p>This paper evaluates the performance of TCP Reno and Google BBR in a hybrid mesh network topology. The study focuses on comparing throughput, latency, and packet loss characteristics under various network conditions.The research includes a performance comparison of the TCP Reno Protocol, a well-known loss-based congestion control method and Google's BBR Protocol using a model-based approach to congestion management within a Hybrid Mesh Topology / ns-3 network environment. The research also uses a Hybrid Mesh Topology, rather than the traditional "dumbbell" topology most commonly found in academic literature, as the basis for this research, thereby permitting for realistic testing of both TCP Reno and Google BBR Protocol performance over many different types of multi-link paths. The Hybrid Mesh Topology contains a core of interconnected routers that simulate a simplified version of the 'backbone' of the Internet with various numbers of local area networks connected to the core, allowing for realistic testing of the TCP Reno and Google BBR Protocols. The research will compare the two congestion control strategies under realistic operating conditions with respect to the following characteristics: time taken for each protocol to reach a steady-state condition, rate of throughput achieved, degree of fairness to other flows sharing the same link, and how stable the two protocols remain as the number of packets in their respective output buffers increase. The goal of this research is to quantify the benefits of using a model-based approach to congestion control to address the issue of "bufferbloat" within long, complex non-linear end-to-end paths in modern packet-switched networks.</p>
+    <p class="abstract-text">
+        This paper evaluates the performance of TCP Reno and Google BBR in a hybrid mesh network topology. The study focuses on comparing throughput, latency, and packet loss characteristics under various network conditions. The research includes a performance comparison of the TCP Reno Protocol, a well-known loss-based congestion control method and Google's BBR Protocol using a model-based approach to congestion management within a Hybrid Mesh Topology / ns-3 network environment. The research also uses a Hybrid Mesh Topology, rather than the traditional "dumbbell" topology most commonly found in academic literature, as the basis for this research, thereby permitting for realistic testing of both TCP Reno and Google BBR Protocol performance over many different types of multi-link paths. The Hybrid Mesh Topology contains a core of interconnected routers that simulate a simplified version of the 'backbone' of the Internet with various numbers of local area networks connected to the core, allowing for realistic testing of the TCP Reno and Google BBR Protocols. The research will compare the two congestion control strategies under realistic operating conditions with respect to the following characteristics: time taken for each protocol to reach a steady-state condition, rate of throughput achieved, degree of fairness to other flows sharing the same link, and how stable the two protocols remain as the number of packets in their respective output buffers increase. The goal of this research is to quantify the benefits of using a model-based approach to congestion control to address the issue of "bufferbloat" within long, complex non-linear end-to-end paths in modern packet-switched networks.
+    </p>
 
 </body>
-</html>    
-    
+</html>
